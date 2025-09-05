@@ -24,7 +24,7 @@ const theme = createTheme({
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename='/MangaMania-2.0-Frontend/'>
         <App />
       </BrowserRouter>
     </ThemeProvider>
