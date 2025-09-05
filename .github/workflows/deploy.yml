@@ -30,7 +30,7 @@ jobs:
 
       # 5. Деплой на отдельную ветку
       - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages # <- сюда пойдёт билд
