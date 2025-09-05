@@ -30,10 +30,11 @@ jobs:
 
       # 5. Деплой на отдельную ветку
       - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v5
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages # <- сюда пойдёт билд
-          publish_dir: ./Frontend/dist # <- папка сборки Vite
-          user_name: 'github-actions'
-          user_email: 'github-actions@github.com'
+  uses: peaceiris/actions-gh-pages@v5
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_branch: gh-pages
+    publish_dir: ./Frontend/dist
+    user_name: 'github-actions'
+    user_email: 'github-actions@github.com'
+    force_orphan: true
