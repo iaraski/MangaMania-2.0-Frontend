@@ -43,10 +43,7 @@ export default function Login() {
       console.error('ошибка входа', err);
     }
   };
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    newMode: 'login' | 'register' | null,
-  ) => {
+  const handleChange = (_: unknown, newMode: 'login' | 'register' | null) => {
     if (newMode !== null) {
       setMode(newMode);
     }
