@@ -7,5 +7,4 @@ export default defineConfig({
     host: '0.0.0.0', // важно: слушать на всех интерфейсах контейнера
     port: 5173,
   },
-  base: './',
 });
